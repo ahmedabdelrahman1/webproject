@@ -157,6 +157,17 @@ header label span
     color: var(--text-grey);
     
 }
+main{
+    margin-top: 85px;
+    padding: 2rem 1.5rem;
+    background-color: #f1f5f9 ;
+    min-height: calc(100vh - 90px);
+}
+.main-content{
+    transition: margin-left 300ms;
+    margin-left: 360px;
+    
+}
 @media  screen and (max-width: 1200px )
 {
  .sidebar 
