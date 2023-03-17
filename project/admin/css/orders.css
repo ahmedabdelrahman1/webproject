@@ -168,6 +168,26 @@ main{
     margin-left: 360px;
     
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: var(--main-color);
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #d9d6d6;
+  }
+  
 @media  screen and (max-width: 1200px )
 {
  .sidebar 
