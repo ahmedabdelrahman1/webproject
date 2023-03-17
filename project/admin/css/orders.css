@@ -321,6 +321,27 @@ table {
     margin-left: 0rem;
 
 }
+th {
+    display: none;
+  }
+  
+  /* Display the table rows as block elements to stack them vertically */
+  td {
+    display: block;
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+  
+  /* Add a before pseudo-element with the content of the table header */
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 8px;
+    font-weight: bold;
+  }
 }
 
 @media  screen and (max-width: 568px) {
