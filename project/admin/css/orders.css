@@ -168,6 +168,25 @@ main{
     margin-left: 360px;
     
 }
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: var(--main-color);
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #c6c5c5;
+  }
+  
 @media  screen and (max-width: 1200px )
 {
  .sidebar 
@@ -209,10 +228,7 @@ main{
 }
 
 @media screen and (max-width: 960px) {
-   .cards
-    {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  
     
     .recent-grid
     {
@@ -220,11 +236,7 @@ main{
     }
 }
 @media  screen and (max-width: 768px) {
-    .cards
-    {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
+  
     .recent-grid
     {
         grid-template-columns: 100%;
@@ -312,10 +324,7 @@ main{
 }
 
 @media  screen and (max-width: 568px) {
-    .cards
-    {
-        grid-template-columns: 100%;
-    }
+   
     
     
 }
