@@ -565,3 +565,48 @@ flex-wrap: wrap;
     width: 100%;
     border-radius: 20px;
 }
+
+.section-m1{
+
+  margin:40px 0;
+}
+#panner{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("sorty.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+#panner h4{
+
+  color:#fafffd;
+  font-size: 30px;
+  padding: 10px 0;
+   
+}
+
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color:black;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+
+}
+
+#panner button:hover{
+
+color:#ffffff;
+background-color: #04AA6D;
+}
