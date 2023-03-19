@@ -353,7 +353,7 @@ tr td:last-child
 .sidebar .sidebar-brand h2 span:last-child,
  .sidebar li a span:last-child
 {
-    display: none;
+    display: block;
 }
 
  .main-content 
@@ -367,7 +367,37 @@ tr td:last-child
    left: 70px;
 }
 
+ .sidebar
+{
+    left:0;
+    z-index: 100;
+    width: 360px;
+}
 
+
+ .sidebar .sidebar-brand,
+ .sidebar li   
+{
+padding-left: 2rem;
+text-align: left;
+}
+
+ .sidebar li a  
+{
+padding-left: 1rem;
+
+}
+
+ .sidebar .sidebar-brand h2 span:last-child,
+ .sidebar li a span:last-child
+{
+display:inline;
+}
+
+ .main-content{
+margin-left: 0rem;
+
+}
 }
 
 @media screen and (max-width: 960px) {
