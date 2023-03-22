@@ -1,9 +1,15 @@
 :root{
-    --main-color: lightblue;
+    --main-color: #43699e;
     --text-grey:#8390a2;
 }
 
-
+.color
+{
+    color:#43699e
+}
+.color1{
+  color: #f1faee;
+}
 *{
     padding: 0;
     margin: 0;
@@ -45,7 +51,7 @@
     padding-left: 1rem;
     display: block;
     font-size: 1.1rem;
-    color: #222;
+    color:#f1faee;
 }
 .sidebar-menu a.active{
     background-color: white;
@@ -180,7 +186,7 @@ main{
   }
   
   th {
-    background-color: var(--main-color);
+    background-color: #e63946;
     color: white;
   }
   

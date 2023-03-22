@@ -1,9 +1,15 @@
 :root{
-    --main-color: lightblue;
+    --main-color: #43699e;
     --text-grey:#8390a2;
 }
 
-
+.color
+{
+    color:#43699e
+}
+.color1{
+  color: #f1faee;
+}
 *{
     padding: 0;
     margin: 0;
@@ -45,7 +51,7 @@
     padding-left: 1rem;
     display: block;
     font-size: 1.1rem;
-    color: #222;
+    color: #f1faee;
 }
 .sidebar-menu a.active{
     background-color: white;
@@ -360,7 +366,7 @@ h1 {
 form {
     margin: 20px;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #f1faee;
     border: 1px solid #ccc;
 }
 
@@ -379,17 +385,48 @@ select {
 }
 
 table {
-    margin: 20px;
     border-collapse: collapse;
     width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #e63946;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #c6c5c5;
+  }
+  
+  td .status-done
+{
+    display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 1rem;
 }
-
-table th, table td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+td .status-not
+{
+    display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 1rem;
 }
-
-table th {
-    background-color: #f0f0f0;
+td .status-pending
+{
+    display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: yellow;
+  margin-right: 1rem;
 }

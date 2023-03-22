@@ -717,13 +717,13 @@
         <div class="modal-content">
             <div class="close" onclick="closeForm()">x</div>
     <form>
-        <label for="email"><b>Email</b></label>
+        <label class="lab" for="email"><b>Email</b></label>
               <input type="text" placeholder="Enter Email" name="email" required>
           
-              <label for="psw"><b>Password</b></label>
+              <label class="lab" for="psw"><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" required>
           
-              <button type="submit" class="btn">Login</button>
+              <button type="submit" class="btn-modal">Login</button>
 
              
     </form>
@@ -742,7 +742,7 @@
             <form>
                 <table>
                     <tr>
-                        <td>
+                        <td class="lab">
                             Email Address:
                         </td>
             
@@ -751,17 +751,17 @@
                         </td>
                     </tr>
             <tr>
-            <td>
+            <td class="lab">
                             Password:
                         </td>
             
                         <td>
-                            <input type="Password" placeholder="Password" name="Password">
+                            <input type="Password"  placeholder="Password" name="Password">
                         </td>
                     </tr>
 
                     <tr>
-                        <td>
+                        <td class="lab">
                                         confirm Password:
                                     </td>
                         
@@ -771,7 +771,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td>
+                                    <td class="lab">
                                                    Age:
                                                 </td>
                                     
@@ -781,7 +781,7 @@
                                             </tr>
 
                                             <tr>
-                                                <td >
+                                                <td class="lab">
                                                                 male:
                                                             </td>
                                                 
@@ -792,7 +792,7 @@
                                                     
                                                         
                                                         <tr>
-                                                            <td>
+                                                            <td class="lab">
                                                                         female:   
                                                                         </td>
                                                             
@@ -812,7 +812,7 @@
 <br>
 <br>
     
-                <button style="margin-left: 50px;"  onclick="closeForm2()">Submit</button>
+                <button style="margin-left: 50px;" class="btn-modal" onclick="closeForm2()">Submit</button>
             </form> 
     
         </div>
