@@ -652,9 +652,10 @@
     border-bottom: 2px solid black;
     font-weight: bold;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 40px;
     color: green;
+    text-align: center;
 }
 .spacestyle span{
     padding-top: 10px;
@@ -662,5 +663,11 @@
     font-weight: bold;
     text-align: center;
     color: red;
+    
 
+}
+#pr{
+  
+  text-align: center;
+  font-size:xx-large;
 }
