@@ -125,6 +125,7 @@ box-sizing: border-box;
   /* LOGO */
   .logo {
   font-size: 32px;
+  width: 200px;
   }
   /* NAVBAR MENU */
   .menu {
