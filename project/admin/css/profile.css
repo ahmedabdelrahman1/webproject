@@ -1,9 +1,15 @@
 :root{
-    --main-color: lightblue;
+    --main-color: #43699e;
     --text-grey:#8390a2;
 }
 
-
+.color
+{
+    color:#43699e
+}
+.color1{
+  color: #f1faee;
+}
 *{
     padding: 0;
     margin: 0;
@@ -45,7 +51,7 @@
     padding-left: 1rem;
     display: block;
     font-size: 1.1rem;
-    color: #222;
+    color: #f1faee;
 }
 .sidebar-menu a.active{
     background-color: white;
@@ -174,7 +180,7 @@ main{
    display: grid;
    place-items: center;
    border: 3px solid #8390a2;
-   background-color: #8390a2;
+   background-color: #1d3557;
 }
 #image
 {
@@ -188,7 +194,7 @@ main{
 {
     display: grid;
    place-items: center;
-   background-color: #b6c0ce;
+   background-color: #43699e;
 }
 
 .info
@@ -196,14 +202,14 @@ main{
     font-weight: bold;
     font-size: large;
     margin: 20px;
-    color: #222;
+    color: #f1faee;
 }
 
 .account-but
 {
     display: grid;
     place-items: center;
-    background-color: #e3e9f0;
+    background-color: #e63946;
     height: auto;
 }
 
