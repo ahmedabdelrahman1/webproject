@@ -820,73 +820,51 @@
       <div id="big-container">
     
         <div class="content">
+            <h1 id="title">Sign up</h1>
+            <br><br><br>
             <div onclick="closeForm2()" class="close2">x</div>
-            <form action=" " method="post" onsubmit="return validate(this)">
-                <table>
-                    <tr>
-                        <td>
-                            Email Address:
-                        </td>
-            
-                        <td>
-                            <input type="mail"  placeholder="Email" name="Email" required>
-                        </td>
-                    </tr>
-            <tr>
-            <td>
-                            Password:
-                        </td>
-            
-                        <td>
-                            <input type="Password" placeholder="Password" name="Password" required>
-                            <p id="message">Password is <span id="strenght"></span></p>
-                        </td>
-                    </tr>
+            <form id="formreg" action=" " method="post" onsubmit=" validate(this)">
+                <div id="box">
+                    <label for="fullname"  class="fl fontLabel">Full Name:</label>
+                    <input type="text" id="fullname" placeholder="Full Name" required class="textBox">
+                </div>
+                <div id="box">
+                    <label for="mail"  class="fl fontLabel">Email Address:</label>
+                    <input id="mail" type="email"  placeholder="Email" name="Email" required class="textBox">
+                </div>
+                      
+           
+                <div id="box">
+                    <label for="password"  class="fl fontLabel">Password:</label>
+                    <input type="Password"  id="password" placeholder="Password" name="Password" required class="textBox">
+                    <p id="message">Password is <span id="strenght"></span></p>
+                </div> 
+                       
+                <div id="box">
+                    <label for="cpassword"  class="fl fontLabel">confirm Password:</label>
+                    <input type="Password" id="cpassword" placeholder="confirmPassword" name="ConfirmPassword" required class="textBox">
+                    <p id="pwcErr"></p>
+                </div>
 
-                    <tr>
-                        <td>
-                                        confirm Password:
-                                    </td>
-                        
-                                    <td>
-                                        <input type="Password" placeholder="ConfirmPassword" name="Confirmpassword" required>
-                                    </td>
-                                </tr>
+                                        
+                <div id="box">
+                    <label for="dat"  class="fl fontLabel">Age:</label>
+                    <input id="dat" type="date"  value="dob" required class="textBox">
+                </div>
 
-                                <tr>
-                                    <td>
-                                                   Age:
-                                                </td>
-                                    
-                                                <td>
-                                                    <input type="date"  value="dob" required>
-                                                </td>
-                                            </tr>
+                <div id="radio box">
+                    <div id="radiomale">
+                        <input type="radio" value="male" id="male" name="gender" required class="textBox">
+                        <label for="male"  class="fl fontLabel">male </label>
+                    </div>
+                    <div id="radiofemale">
+                        <input type="radio" value="female" id="female" name="gender" required class="textBox">
+                        <label for="female"  class="fl fontLabel">Female </label> 
 
-                                            <tr>
-                                                <td >
-                                                                male:
-                                                            </td>
-                                                
-                                                            <td>
-                                                                <input type="checkbox" value="male">
-                                                            </td>
-                                                        </tr>       
-                                                    
-                                                        
-                                                        <tr>
-                                                            <td>
-                                                                        female:   
-                                                                        </td>
-                                                            
-                                                                        <td>
-                                                                            <input type="checkbox" value="female">
-                                                                        </td>
-                                                                    </tr>
+                    </div>
 
+                </div>
 
-                </table>
-      
 
 <br>
 <br>
