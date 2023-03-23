@@ -10,6 +10,10 @@
 .color1{
   color: #f1faee;
 }
+.logo
+{
+    width: 200px;
+}
 .btn
 {
     background: var(--main-color);
