@@ -1300,27 +1300,29 @@ cursor:pointer;
   cursor:pointer;
   }
 
-  .content form table td input{
+ /* .content form table td input{
     width: 150%;
     display: block;
     margin: 15px auto;
-  }
+  }*/
 
   .content {
     width: 500px;
     height: 600px;
-    background-color: white;
+    background-color: rgb(0, 172, 235);
     border-radius:4;
     text-align: center;
     padding: 20px;
     position: relative;
     border-radius: 12%;
   border: 8px solid #222 ;
+  justify-content: space-between;
   }
-  input{
+  /*input{
     padding: 5px;
-  }
+  }*/
   #big-container {
+    background-color: #4c9e9e;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
@@ -1330,9 +1332,103 @@ cursor:pointer;
     justify-content: center;
     align-items: center;
     display: none;
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: fixed;
+    /*flex-wrap: wrap;*/
+    
   }
+
+  #formreg{
+    text-align: left;
+    padding-left: 20px;
+    justify-content: space-between;
+  }
+/*
+  #big-container{
+    background: url(http://wrbbradio.org/wp-content/uploads/2016/10/grey-background-07.jpg) no-repeat center fixed;
+    background-size: cover;
+  }
+  
+  .content{
+    background: #2d3e3f;
+    width: 350px;
+    height: 400px;
+    padding-bottom: 20px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: 70px 50px 20px 50px;
+  }
+  
+  */
+  .fl{
+    float: left;
+    width: 110px;
+    line-height: 35px;
+  }
+  
+  .fontLabel{
+    color: rgb(0, 0, 0);
+  }
+  
+  /*.fr{
+    float: right;
+  }
+  
+  .clr{
+    clear: both;
+  }*/
+  
+  
+  /*.box{
+    width: 360px;
+    height: 35px;
+    margin-top: 10px;
+    font-family: verdana;
+    font-size: 12px;
+  }
+  */
+  
+  .textBox{
+    height: 35px;
+    width: 190px;
+    border: none;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .new{
+    float: left;
+  }
+  
+  .radio{
+    color: white;
+    background: #2d3e3f;
+    line-height: 38px;
+  }
+  
+  .submit{
+    float: right;
+    border: none;
+    color: white;
+    width: 110px;
+    height: 35px;
+    background: #ff6600;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  /*
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  /*
+  }
+  /*
+*/
+
+
+
+  /*search bar*/
 
   .search-wrapper 
 {
