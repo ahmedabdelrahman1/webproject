@@ -14,7 +14,7 @@
 {
     width: 200px;
 }
-button
+.btn
 {
     background: var(--main-color);
     border-radius: 10px;
@@ -65,7 +65,7 @@ button
     padding-left: 1rem;
     display: block;
     font-size: 1.1rem;
-    color:#f1faee;
+    color: #f1faee;
 }
 .sidebar-menu a.active{
     background-color: white;
@@ -188,28 +188,6 @@ main{
     margin-left: 360px;
     
 }
-
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    text-align: left;
-    padding: 8px;
-  }
-  
-  th {
-    background-color: #e63946;
-    color: white;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #c6c5c5;
-  }
-  .current-items{
-text-align: center;
-  }
 @media  screen and (max-width: 1200px )
 {
  .sidebar 
@@ -247,15 +225,39 @@ text-align: center;
    left: 70px;
 }
 
+.sidebar
+{
+    left:0;
+    z-index: 100;
+    width: 360px;
+}
+
+
+ .sidebar .sidebar-brand,
+ .sidebar li   
+{
+padding-left: 2rem;
+text-align: left;
+}
+
+ .sidebar li a  
+{
+padding-left: 1rem;
 
 }
-.additem{
-    position:absolute;
-    bottom: 8px;
-    right: 16px;
-    font-size: 18px;
-  
+
+ .sidebar .sidebar-brand h2 span:last-child,
+ .sidebar li a span:last-child
+{
+display:inline;
 }
+
+ .main-content{
+margin-left: 0rem;
+ }
+
+}
+
 @media screen and (max-width: 960px) {
    .cards
     {
@@ -364,6 +366,50 @@ text-align: center;
     {
         grid-template-columns: 100%;
     }
+    
+    
+}
+body {
+    font-family: Arial, sans-serif;
+}
 
+h1 {
+    text-align: center;
+}
 
+form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f1faee;
+    border: 1px solid #ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+select {
+    width: 100%;
+}
+
+table {
+    margin: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f0f0f0;
 }
