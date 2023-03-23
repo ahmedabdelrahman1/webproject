@@ -755,7 +755,7 @@
     
         <div class="content">
             <div onclick="closeForm2()" class="close2">x</div>
-            <form>
+            <form action='' method='post' onsubmit='return validate(this)'>
                 <table>
                     <tr>
                         <td class="lab">
@@ -763,7 +763,7 @@
                         </td>
             
                         <td>
-                            <input type="mail"  placeholder="Email" name="Email">
+                            <input type="mail"  placeholder="Email" name="Email" required>
                         </td>
                     </tr>
             <tr>
@@ -772,7 +772,8 @@
                         </td>
             
                         <td>
-                            <input type="Password"  placeholder="Password" name="Password">
+                            <input type="Password"  id="password" placeholder="Password" name="Password" required>
+                            <p id="message">Password is <span id="strenght"></span></p>
                         </td>
                     </tr>
 
@@ -782,7 +783,7 @@
                                     </td>
                         
                                     <td>
-                                        <input type="Password" placeholder="confirmPassword" name="confirmpassword">
+                                        <input type="Password" id="cpassword" placeholder="confirmPassword" name="ConfirmPassword" required>
                                     </td>
                                 </tr>
 
@@ -792,7 +793,7 @@
                                                 </td>
                                     
                                                 <td>
-                                                    <input type="date"  value="dob">
+                                                    <input type="date"  value="dob" required>
                                                 </td>
                                             </tr>
 
@@ -828,7 +829,7 @@
 <br>
 <br>
     
-                <button style="margin-left: 50px;" class="btn-modal" onclick="closeForm2()">Submit</button>
+                <button style="margin-left: 50px;" class="btn-modal"  type="submit">Submit</button>
             </form> 
     
         </div>
@@ -878,6 +879,58 @@
                    // setTimeout(showSlides,0);
           
         } 
+        var pass = document.getElementById ("password");
+        var msg = document.getElementById("message");
+        var str = document.getElementById("strenght");
+        pass. addEventListener('input', () => {
+        if (pass.value.length > 0){
+        msg.style.display = "block";
+        }
+        else{
+        msg.style.display = "none";
+        }
+        if (pass.value. length < 4){
+        str.innerHTML = "weak";
+        }
+        else if(pass.value.length >= 4 && pass.value.length < 8){
+        str.innerHTML = "medium";
+        }
+        else if(pass.value. length >= 8){
+        str.innerHTML =
+        "strong";
+        }
+        })
+
+        function validatePassword(field1, field2){
+				let valid=true;
+				if(field1==''){
+					document.getElementById('pwErr').innerHTML='You Must Enter a Password.';
+					valid=false;
+				}
+				else{
+					document.getElementById('pwErr').innerHTML='';
+				}
+				if(field1!=field2 || field2==''){
+					document.getElementById('pwcErr').innerHTML='You must Enter a matching Password.';
+					valid=false;
+				}
+				else{
+					document.getElementById('pwcErr').innerHTML='';
+				}
+				return valid;
+			}
+
+            function validate(form){
+				let fail='';
+				fail&=validatePassword(form.Password.value, form.ConfirmPassword.value);
+				if(fail)
+					return true;
+				else{
+					return false;
+				}
+			}
+        
+        
     </script>
 
     
