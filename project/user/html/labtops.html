@@ -865,7 +865,6 @@
 
                 </div>
 
-
 <br>
 <br>
 
@@ -873,7 +872,7 @@
 <br>
 <br>
     
-                <button style="margin-left: 50px;"  onclick="closeForm2()">Submit</button>
+                <button style="margin-left: 50px;" class="btn-modal"  type="submit">Submit</button>
             </form> 
     
         </div>
@@ -912,7 +911,8 @@
       document.getElementById("body").style.overflow="scroll";
 
     }
-    var pass = document.getElementById ("password");
+    
+        var pass = document.getElementById ("password");
         var msg = document.getElementById("message");
         var str = document.getElementById("strenght");
         pass. addEventListener('input', () => {
@@ -936,13 +936,6 @@
 
         function validatePassword(field1, field2){
 				let valid=true;
-				if(field1==''){
-					document.getElementById('pwErr').innerHTML='You Must Enter a Password.';
-					valid=false;
-				}
-				else{
-					document.getElementById('pwErr').innerHTML='';
-				}
 				if(field1!=field2 || field2==''){
 					document.getElementById('pwcErr').innerHTML='You must Enter a matching Password.';
 					valid=false;
@@ -955,13 +948,14 @@
 
             function validate(form){
 				let fail='';
-				fail&=validatePassword(form.Password.value, form.ConfirmPassword.value);
+				fail+=validatePassword(form.Password.value, form.ConfirmPassword.value);
 				if(fail)
 					return true;
 				else{
 					return false;
 				}
 			}
+        
     
     </script>
 

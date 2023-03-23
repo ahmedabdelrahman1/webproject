@@ -1250,7 +1250,11 @@ strong.link-email-footer {
   overflow: hidden;
   position: fixed;
 }
-
+#signup
+{
+  margin: 4px;
+  color: #1d3557;
+}
 .modal-content {
   width: 500px;
   height: 300px;
@@ -1259,8 +1263,8 @@ strong.link-email-footer {
   text-align: center;
   padding: 20px;
   position: relative;
-  border-radius: 15%;
-  border: 8px solid #222 ;
+  border-radius: 10%;
+  border: 8px solid #1d3557  ;
 }
 
 .lab
@@ -1271,8 +1275,8 @@ strong.link-email-footer {
 .btn-modal
 {
   padding: 5px;
-  border: 3px solid #222;
-  border-radius: 30%;
+  border: 3px solid #1d3557 ;
+  border-radius: 15%;
 }
 .modal-content input{
   width: 50%;
@@ -1309,18 +1313,20 @@ cursor:pointer;
   .content {
     width: 500px;
     height: 600px;
-    background-color: rgb(0, 172, 235);
+    background-color: #dbe1ea;
     border-radius:4;
     text-align: center;
     padding: 20px;
     position: relative;
     border-radius: 12%;
-  border: 8px solid #222 ;
+  border: 8px solid #1d3557 ;
   justify-content: space-between;
   }
-  /*input{
-    padding: 5px;
-  }*/
+  input{
+    border: 5px solid #1d3557  ;
+    margin: 5px;
+    background-color:  #fcfcfc;
+  }
   #big-container {
     background-color: #4c9e9e;
     width: 100%;
