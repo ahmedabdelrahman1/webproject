@@ -383,10 +383,7 @@ form {
     border: 1px solid #ccc;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
+
 
 textarea {
     width: 100%;
