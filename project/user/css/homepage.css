@@ -565,7 +565,7 @@ text-align: start;
     font-weight: 700;
     color: rgb(34, 137, 34);
 }
-#product1 .pro a{
+#product1 .pro #cart{
 
     width: 40px;
     height: 40px;
@@ -575,7 +575,7 @@ text-align: start;
     font-weight: 500;
     color: rgb(22, 25, 22);
     border: 1px solid #cce7d0;
-    position: absolute;
+   position: absolute;
     bottom: 20px;
     right:10px;
 }
@@ -1142,7 +1142,6 @@ a {
 a:active {
   outline: 0;
 }
-
 a:hover {
   outline: 0;
 }
