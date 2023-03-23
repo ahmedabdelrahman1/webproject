@@ -371,6 +371,7 @@
   }
   
   h3.footer-failory-name {
+    width: 200px;
     box-sizing: border-box;
     color: #FFFFFF;
     display: block;
