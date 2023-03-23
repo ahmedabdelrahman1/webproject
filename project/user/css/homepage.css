@@ -1043,6 +1043,7 @@ img.failory-logo-image {
 }
 
 h3.footer-failory-name {
+  width: 200px;
   box-sizing: border-box;
   color: #FFFFFF;
   display: block;
@@ -1056,6 +1057,7 @@ h3.footer-failory-name {
 }
 
 p.footer-description-failory {
+  padding-left: 50px;
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.8);
   display: block;
@@ -1439,12 +1441,14 @@ cursor:pointer;
 
   .search-wrapper 
 {
+  background-color: white;
   border: 1px solid lightgray;
   border-radius: 30px;
   height: 50px;
   display: flex;
   align-items: center;
   overflow: hidden;
+  /*background-color: #A8DADC;*/
 }
 .search-wrapper span
 {
@@ -1454,6 +1458,7 @@ cursor:pointer;
 }
 .search-wrapper input
 {
+  width: 400px;
   height: 100%;
   padding: .5rem;
   border: none;

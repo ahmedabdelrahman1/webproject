@@ -679,6 +679,7 @@
 
   .search-wrapper 
   {
+    background-color: white;
     border: 1px solid lightgray;
     border-radius: 30px;
     height: 50px;
@@ -694,6 +695,7 @@
   }
   .search-wrapper input
   {
+    width: 400px;
     height: 100%;
     padding: .5rem;
     border: none;
