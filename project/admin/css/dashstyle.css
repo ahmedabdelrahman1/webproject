@@ -10,7 +10,10 @@
 .color1{
   color: #f1faee;
 }
-
+.logo
+{
+    width: 200px;
+}
 *{
     padding: 0;
     margin: 0;
@@ -237,6 +240,15 @@ main{
 }
 
 .card-header button
+{
+    background: var(--main-color);
+    border-radius: 10px;
+    color: #fff;
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    border: 1px solid var(--main-color);
+}
+button
 {
     background: var(--main-color);
     border-radius: 10px;
