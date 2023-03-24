@@ -770,6 +770,11 @@ margin-right: 30px;
     align-items: center;
     margin-left: 85px;
   }
+
+
+  #searchin{
+    width: 100px;
+  }
 }
 
 
@@ -1043,7 +1048,7 @@ img.failory-logo-image {
 }
 
 h3.footer-failory-name {
-  width: 200px;
+  @media
   box-sizing: border-box;
   color: #FFFFFF;
   display: block;
