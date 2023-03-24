@@ -1048,7 +1048,7 @@ img.failory-logo-image {
 }
 
 h3.footer-failory-name {
-  @media
+  width: 200px;
   box-sizing: border-box;
   color: #FFFFFF;
   display: block;
