@@ -76,6 +76,9 @@
         /* APPLYING MEDIA QUERIES */
         
         @media (max-width: 768px) {
+          #searchin{
+            width: 100px;
+          }
         
         .menu { 
         

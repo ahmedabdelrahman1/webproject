@@ -667,6 +667,11 @@ margin-right: 30px;
     align-items: center;
     margin-left: 85px;
   }
+
+
+  #searchin{
+    width: 100px;
+  }
 }
 
 
