@@ -452,7 +452,7 @@
             border: none;
             outline: none;
           }
-          .signin{
+          #signin{
             display: grid;
             width: auto;
             place-content: center;
@@ -479,7 +479,7 @@
           .btn-modal
           {
             margin-top: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             padding: 10px;
             width: 200px;
             margin-left: 155px;
@@ -487,10 +487,33 @@
             color:#FFFFFF;
             font-size: larger;
             border: none;
+            cursor: pointer;
           }
           .btn-modal.btn-modal:hover
           {
-              background-color: green;
+              background-color:#A8DADC;
           }
-          
+          .opensignup
+          {
+            color: #222;
+            font-size: large;
+          }
+          .opensignup:hover{
+            color: #A8DADC;
+            cursor: pointer;
+          }
+          #signup{
+            display: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+          }
+          .box{
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+          #message
+          {
+            display: none;
+          }
           
