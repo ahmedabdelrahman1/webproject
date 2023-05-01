@@ -185,6 +185,7 @@ main{
    place-items: center;
    border: 3px solid #8390a2;
    background-color: #1d3557;
+   height: 300px;
 }
 #image
 {
@@ -233,6 +234,33 @@ svg{
     height: 30px;
     width: 30px;
     margin: 10px;
+}
+.upload{
+    width: 100px;
+    position: relative;
+    margin-right: 100px;
+}
+.upload .round{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    background-color: #e3e9f0;
+    line-height: 33px;
+    overflow: hidden;
+    text-align: center;
+}
+.round
+{
+    border-radius: 30px;
+    left: 1px;
+}
+.upload .round input[type='file']
+{
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
 }
 
 @media  screen and (max-width: 1200px )
