@@ -133,7 +133,7 @@
   }
   
   /* DROPDOWN MENU */
-  
+  /*
   .services {
   
   position: relative; 
@@ -147,7 +147,7 @@
   padding: 1em 0;
   
   position: absolute; /*WITH RESPECT TO PARENT*/
-  
+  /*
   display: none;
   
   border-radius: 8px;
@@ -186,7 +186,7 @@
   display: block;
   
   }
-
+*/
 
 
   input[type=checkbox]{
